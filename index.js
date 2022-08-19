@@ -12,9 +12,9 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").innerHTML = "Soumettre";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "suivant";
   }
   // ... and run a function that displays the correct step indicator:
   fixStepIndicator(n)
@@ -32,7 +32,7 @@ function nextPrev(n) {
   
   if (currentTab >= x.length) {
     
-    document.getElementById("regForm").submit();
+    document.getElementById("regForm").soumettre();
     return false;
   }
  
